@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import axios from 'axios';
 import Banner from '../components/HomeBanner';
 import { Box, ThemeProvider, createTheme, responsiveFontSizes, Card, Container, Typography, CardContent, CardMedia, CardActionArea } from '@mui/material';
