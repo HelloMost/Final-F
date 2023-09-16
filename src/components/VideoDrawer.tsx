@@ -1,8 +1,6 @@
 import { List, Button, Drawer, Box, ListItem, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
-import React, { useState } from "react"
+import React from "react"
 import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import { useHref } from "react-router-dom";
 
 
 
@@ -36,7 +34,7 @@ function VideoDrawer() {
           onKeyDown={toggleDrawer(anchor, false)}
         >
         <List component='a' href="/chapter1">
-        {['Chapter 1'].map((text, index) => (
+        {['Chapter 1'].map((text) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
@@ -49,7 +47,7 @@ function VideoDrawer() {
         </List>
         
         <List component='a' href="chapter2">
-        {['Chapter 2'].map((text, index) => (
+        {['Chapter 2'].map((text) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
@@ -62,7 +60,7 @@ function VideoDrawer() {
         </List>
         
         <List component='a' href="">
-        {['Chapter 3'].map((text, index) => (
+        {['Chapter 3'].map((text) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
@@ -75,7 +73,7 @@ function VideoDrawer() {
         </List>
         
         <List component='a' href="">
-        {['Chapter 4'].map((text, index) => (
+        {['Chapter 4'].map((text) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
@@ -88,7 +86,7 @@ function VideoDrawer() {
         </List>
         
         <List component='a' href="">
-        {['Chapter 5'].map((text, index) => (
+        {['Chapter 5'].map((text) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
